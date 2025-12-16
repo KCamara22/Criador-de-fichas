@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "New-Rocker";
+    src: url(fontes/NewRocker-Regular.ttf) format("truetype");
+}
+
+:root {
+    --cor1: #594022;
+    --cor2: #A67C49;
+    --cor3: #F2CA80;
+    --cor4: #442d17;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: var(--cor3);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+    padding: 10px 20px;
+}
+
+header > img {
+    margin: 5px 5px;
+    height: 90px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    margin-right: 36px;
+}
+
+li > a {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #BF984E;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 8px 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.493);
+    transition: transform 0.2s ease; /*Qualquer mudança no transform deve ser animada suavemente*/
+}
+li:hover {
+    box-shadow: none;
+    transform: scale(1.2); /*Aumenta 20%*/
+}
+
+main {
+    background-color: var(--cor3);
+    margin: 0;
+}
+
+section {
+    color: #26190D;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 16px;
+}
+.site-sumary > h1 {
+    font-family: "New-Rocker";
+    font-size: 3rem;
+}
+
+.game-sumary {
+    display: flex;
+    justify-content: space-between;
+}
+.game-sumary > div {
+    display: block;
+    margin: 20px auto;
+    background-color: #26190D;
+    border-radius: 12px;
+    width: 100%;
+    height: 350px;
+
+}
+
+
+
+
+
